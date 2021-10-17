@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Fisioterapeuta Kellin Gauze - Atendimento Domiciliar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="https://www.kellingauze.com.br/logo/ico32.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="https://www.kellingauze.com.br/logo/ico32.ico" type="image/x-icon"/>
+ 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/timeline.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+<style type="text/css">
+ 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/*******************************/
+/* Navar -- Barra de navegacao */
+/*******************************/
+.navbar{
+  background-color:  #29564d;
+}
+a.nav-item{
+    padding-left: 7px;
+    padding-right: 7px;
+} 
+
+ul.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav>li {
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+}
+
+.navbar-nav>li>a, a.navbar-link {
+    text-decoration: none;
+    color: #ddeeeb!important; /*verde claro*/
+}
+.navbar-nav>li>a:hover, a.navbar-link:hover {
+    text-decoration: none;
+    color: #4d998b!important; /*verde escuro*/ 
+}
+.navbar-nav>li>a i {
+    margin-right: 10px;
+}
+
+/***********************/
+/* Header -- Cabecalho */
+/***********************/
+header.teste{
+/*    background: url(../img/kellin2.jpeg);
+    background-repeat: no-repeat;
+*/   
+ /*background-color: #c9e9d4;*/
+    /*min-height: 450px;*/
+
+    background-image: url("./img/header-bgX2.jpeg");
+    /*background-size: 50%;*/
+    background-position: top left;
+    /*background-repeat: repeat;*/
+
+    /*background-attachment: fixed;*/
+
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+
+    margin-top: 40px; 
+/*    height: 50%;
+*/}
+.message {
+    width: 50%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffffbb;
+    border-radius: 15px;
+    position:relative;
+}
+
+.img-fluid-test{
+  width:180px;
+}
+.active{
+    border-width: 5px;
+    border-color: #4ca392;
+}
+
+
+@media screen and (max-width: 768px) {
+    .message {
+        width: 70%;
+        padding: 35px;
+    }
+    .container {
+        margin-top: 30px;
+    }
+
+  .img-fluid-test{
+    width:150px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+    .message {
+        width: 70%;
+        padding: 15px;
+    }
+  header.teste{
+    background-image: url("./img/header-bgy.jpeg");
+  }
+  .img-fluid-test{
+    width:130px;
+  }
+  /*    .message::before {
+        width: 100px;
+        height: 123px;
+        position: relative;
+        left: auto;
+        top: 0;
+        float: left;
+        margin-right: 15px;
+        background-size: 100px;
+    }
+*/}
+/*.card-footer{
+  margin-bottom: 10px;
+}*/
+
+ul.no-bullet {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.zoom {
+  /*padding: 50px;*/
+  transition: transform .2s; /* Animation */
+  /*margin: 0 auto;*/
+}
+
+.zoom:hover {
+  transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  border: 3px solid #4ca392;
+}
+</style>
+
+</head>
+<body>
+ 
+
+<nav name="topo" class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <!-- <div class="container-fluid"> -->
+        <div class="navbar-brand">
+   
+            <a class="nav-item navbar-link" href="https://www.facebook.com/Fisioterapeuta-Kellin-Gauze-100835728315801" target="_blank"><i aria-hidden="true" class="fa fa-lg fa-facebook-square"></i></a>
+
+            <a class="nav-item navbar-link" href="https://api.whatsapp.com/send?phone=5551995605902&text=Oi%2C%20peguei%20teu%20contato%20no%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank"><i aria-hidden="true" class="fa fa-lg fa-whatsapp"></i></a>
+
+            <a class="nav-item navbar-link" href="https://www.instagram.com/kellingauze/" target="_blank"><i aria-hidden="true" class="fa fa-lg fa-instagram"></i></a>
+
+        </div>
+            <button class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+             <ul class="navbar-nav ml-auto">
+<!--                 <li>
+                    <a class="nav-link" href="#depoimentos"><i aria-hidden="true" class="fa fa-lg fa-quote-left"></i>Depoimentos</a>
+                </li>
+ -->
+<!--                 <li>
+                    <a class="nav-link" href="#covid19"><i aria-hidden="true" class="fa fa-lg fa-exclamation-triangle"></i>COVID-19</a>
+                </li>
+ -->
+                <li>
+                    <a class="nav-link" href="#sobre"><i aria-hidden="true" class="fa fa-lg fa-user"></i>Sobre</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#atendimento"><i aria-hidden="true" class="fa fa-lg fa-home"></i>Atendimento</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#servicos"><i aria-hidden="true" class="fa fa-lg fa-info-circle"></i>Serviços</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#pacotes"><i aria-hidden="true" class="fa fa-lg fa-money"></i>Pacotes</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#faq"><i aria-hidden="true" class="fa fa-lg fa-question-circle"></i>FAQ</a>
+                </li>
+              </ul>
+        </div>
+    <!-- </div> -->
+</nav>
+
+
+
+
+<header class="teste">
+<!--     <div class="row congratz">
+    </div>
+ -->   
+    <br>
+         <div class="row message">
+            <!-- <h2 id="pathName"><em>Página em Construção</em></h2> -->
+            <img class="img-fluid" src="./logo/transparenteFull.png" alt="Foto Kellin">
+        </div>        
+    <br>
+</header>
+
+<div class="container">
+  <a name="sobre"></a><h2>Sobre</h2>
+  <p>Descrição</p>
+  <div class="row">
+
+      <div class="col-12 col-sm-6"> <!-- <div class="coluna-mobile coluna-desktop"> -->
+
+          <div class="card mb-3">
+              <div class="row no-gutters">
+                  <div class="col-auto">
+                      <img src="./img/kellin.jpg" alt="Card image" class="img-fluid-test">
+                  </div>
+                  <div class="col">
+                      <div class="card-body px-2">
+                          <h4 class="card-title">Kellin Mayara da Silva Gauze</h4>
+                          <p class="card-text">Graduada em Fisioterapia - UNISINOS <br>
+                        CREFITO: 301902-F</p>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+                            Saiba Mais
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-3"> <!-- <div class="coluna-mobile coluna-desktop"> -->
+          <div class="card text-center">  <!-- style="width: 18rem;" -->
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></h5>
+              <h6 class="card-subtitle mb-2 text-muted">Instagram</h6>
+              <p class="card-text">Stories de atendimentos e interação com o público.</p>
+              <a href="https://www.instagram.com/kellingauze/" target="_blank" class="btn btn-success">
+                <i aria-hidden="true" class="fa fa-user-plus"></i> Siga <span class="badge badge-pill badge-light">+1K</span>
+              </a>
+            </div>
+          </div>
+                         
+      </div>
+      <div class="col-6 col-sm-3"> <!-- <div class="coluna-mobile coluna-desktop"> -->
+          <div class="card text-center">  <!-- style="width: 18rem;" -->
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></h5>
+              <h6 class="card-subtitle mb-2 text-muted">Facebook</h6>
+              <p class="card-text">Posts informativos baseados em artigos científicos</p>
+              <a href="https://www.facebook.com/Fisioterapeuta-Kellin-Gauze-100835728315801" target="_blank" class="btn btn-success">
+                <i aria-hidden="true" class="fa fa-thumbs-up"></i> Curta <span class="badge badge-pill badge-light">243</span>
+              </a>
+            </div>
+          </div>
+                
+      </div>
+   </div>   
+<!-- MODAL -->
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Kellin Mayara da Silva Gauze</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4></h4>
+
+
+        <p> <b>Kellin</b>  M. S. <b>Gauze</b> é graduada em Fisioterapia pela Universidade do Vale do Rio dos Sinos – UNISINOS (2020). Durante a graduação desfrutou de experiências de atendimento no âmbito comunitário, clínico e hospitalar. Além disso, foi monitora da atividade acadêmica Reabilitação Funcional III, a qual compreende a reabilitação neurofuncional. Possui experiência no atendimento clínico e domiciliar de Fisioterapia traumato-ortopédica, esportiva, neurologia e gerontologia.</p>
+
+      </div>
+      <div class="modal-footer">
+        <a href="http://lattes.cnpq.br/3341367647586256" class="btn btn-success">Lattes</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--             <hr>
+            <a name="depoimentos"></a><h2>Depoimentos</h2>
+            <p>Descrição</p>
+ -->
+        <div class="row">
+       <!-- <div class="card-columns"> -->
+
+        <div class="col-sm-4 media p-3">
+            <!-- <img src="./img/twitter_thumb.jpg" alt="Teste" class="mr-3 mt-3 rounded-circle" style="width:60px;"> -->
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p><i aria-hidden="true" class="fa fa-quote-left"></i> 
+                 Está sempre preocupada com o bem-estar do seu paciente, não medindo esforços para tirar o nosso máximo.
+                <i aria-hidden="true" class="fa fa-quote-right"></i></p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Débora Specht <cite title="Débora Specht">Controle Motor</cite><br>
+                    <button type="button" class="btn btn-link btn-sm" title="Débora Specht" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Excelente profissional. Dedicada, cuidadosa, motivadora. Está sempre preocupada com o bem-estar do seu paciente, não medindo esforços para tirar o nosso máximo. Está sempre nos desafiando atingir até mais que nosso objetivo.">
+                      Leia mais 
+                    </button>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>           
+          </div>
+
+        <div class="col-sm-4 media p-3">
+            <!-- <img src="./img/twitter_thumb.jpg" alt="Teste" class="mr-3 mt-3 rounded-circle" style="width:60px;"> -->
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p><i aria-hidden="true" class="fa fa-quote-left"></i> Uma excelente profissional, com muito conhecimento e que foi fundamental na minha recuperação <i aria-hidden="true" class="fa fa-quote-right"></i></p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Kamila Martins <cite title="Kamila Martins">Lesão de LCA (joelho)</cite><br>
+                    <button type="button" class="btn btn-link btn-sm" title="Kamila Martins" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Uma excelente profissional, com muito conhecimento e que foi fundamental na minha recuperação. Tive o prazer de fazer o pré e pós operatório com ela e após alguns dias de cirurgia eu estava com uma ótima mobilidade. Sempre atenciosa, pacenciosa e disposta a buscar o nosso melhor.">
+                      Leia mais 
+                    </button>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>           
+        </div>
+
+        <div class="col-sm-4 media p-3">
+            <blockquote class="blockquote">
+              <p><i aria-hidden="true" class="fa fa-quote-left"></i> Seria triste, seria escuro, não teria movimento e nem esperança sem minhas fisioterapeutas.
+               <i aria-hidden="true" class="fa fa-quote-right"></i></p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Marcelo Cabral <cite title="Marcelo Cabral">Lesão Medular</cite><br>
+                    <button type="button" class="btn btn-link btn-sm" title="Marcelo" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Seria triste, seria escuro, não teria movimento e nem esperança sem minhas fisioterapeutas, com vocês superei e estou superando meus problemas para voltar a sonhar e recomeçar! Obrigada por fazer a diferença.">
+                      Leia mais 
+                    </button>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+        </div>
+
+
+            <hr>
+            <a name="atendimento"></a><h2>Atendimento</h2>
+        
+            <div class="alert alert-warning" role="alert">
+              <h4 class="alert-heading"> 
+                <span class="badge badge-pill badge-danger"><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> COVID-19 </span>
+                Cuidados durante a pandemia!
+              </h4>
+              <p>Estou pronta para atender os pacientes de forma segura em pessoa ou por meio de Telemedicina, se necessário.</p>
+              <hr>
+              <p class="mb-0">Não interrompa seu tratamento de fisioterapia e mantenha-se em segurança por meio de atendimento domiciliar. Sigo todas as medidas de proteção recomendadas pela <a href="http://portal.anvisa.gov.br/documents/219201/4340788/Perguntas+e+Respostas+GGTES.pdf/7fce6e91-cf99-4ec2-9d20-1fb84b5a6c38" class="text-danger font-weight-bold" target="_blank">ANVISA</a> publicadas recentemente.</p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6"> <!-- offset-md-3 -->
+                <div class="card">
+                  <img src="./img/fb_thumb2.jpeg" class="card-img-top" alt="...">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-original-green font-weight-bold"><big><i aria-hidden="true" class="fa fa-home"></i> Atendimento Domiciliar</big></li>
+                    <li class="list-group-item"><i aria-hidden="true" class="fa fa-users"></i> Adultos e Idosos</li>
+                    <li class="list-group-item"><i aria-hidden="true" class="fa fa-calendar"></i> Segunda-feira à Sexta-feira</li>
+                    <li class="list-group-item"><i aria-hidden="true" class="fa fa-clock-o"></i> Das 09:00 às 19:00</li>
+                    <li class="list-group-item"><i aria-hidden="true" class="fa fa-map-marker"></i> Canoas-RS e Charqueadas-RS</li>
+                  </ul>
+                  <div class="card-body">
+                    <p class="card-text">
+                      O atendimento fisioterapêutico domiciliar é recomendado para pessoas que: <br>
+                      <ul class="no-bullet">
+                        <li> <i aria-hidden="true" class="fa fa-check text-original-green"></i> apresentem mobilidade reduzida; </li>
+                        <li> <i aria-hidden="true" class="fa fa-check text-original-green"></i> utilizam equipamentos para locomoção; </li>
+                        <li> <i aria-hidden="true" class="fa fa-check text-original-green"></i> estão em reabilitação pós-operatória; </li>
+                        <li> <i aria-hidden="true" class="fa fa-check text-original-green"></i> estão em reabilitação neurológica (AVC, Parkinson, lesão medular); </li>
+                        <li> <i aria-hidden="true" class="fa fa-check text-original-green"></i> desejam tratamento personalizado e individualizado no conforto de seu lar.</li>
+                      </ul>
+                    </p>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6"> <!-- offset-md-3 -->
+              <h4>Etapas do atendimento</h4>
+              <ul class="timeline">
+                <li>
+                <h5 class="text-original-green">Avaliacao Fisioterapeutica</h5>
+                  <!-- <a href="#" class="float-right">21 March, 2014</a> -->
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                </li>
+                <li>
+                  <h5 class="text-original-green">Atendimento</h5>              <!-- <a href="#" class="float-right">4 March, 2014</a> -->
+                  <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                </li>
+                <li>
+                  <h5 class="text-original-green">Evolução</h5>
+                  <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                </li>
+              </ul>
+
+
+  </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="canoas-tab" data-toggle="tab" href="#canoas" role="tab" aria-controls="canoas" aria-selected="true">Canoas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="charqueadas-tab" data-toggle="tab" href="#charqueadas" role="tab" aria-controls="charqueadas" aria-selected="false">Charqueadas</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active w-100" id="canoas" role="tabpanel" aria-labelledby="canoas-tab">
+                    <p class="card-text">Explore o mapa e viisualize minha área de atuação no atendimento de fisioterapia domiciliar em Canoas-RS. Os bairros atendidos em Canoas são Mal. Rondom, Moinhos de Vento, Vila Rosa, Jardim do Lago, Centro, Estância Velha, Igara.</p>
+                      <div class="map-responsive">
+                          <iframe src="https://www.google.com/maps/d/embed?mid=1m2CCrQMd_pXxtO1JwAmEXcNJsvhkcsVh&ll=-29.911138686106717%2C-51.16695126534424&z=12" width="640" height="480"></iframe>
+                      </div>
+                </div>
+                <div class="tab-pane fade w-100" id="charqueadas" role="tabpanel" aria-labelledby="charqueadas-tab">
+                    <p class="card-text">Explore o mapa e viisualize minha área de atuação no atendimento de fisioterapia domiciliar em Charqueadas-RS.</p>
+                      <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c3IIW0ZHWdff_sZDEgGUCkIPkehLgVDx&ll=-29.96202474119875%2C-51.62637092213135&z=12" width="640" height="480"></iframe>
+                      </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+          <hr>
+
+          <a name="servicos"></a><h2>Serviços</h2>
+
+
+          <p>Descrição</p>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="jumbotron">
+      <h1 class="font-weight-light">Prevenção</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="jumbotron">   <!-- style="background-image: none" -->
+      <div class="teste">
+        <h1 class="font-weight-light">Reabilitação</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="jumbotron">  <!--  style="background-image: none; background-color: #c9e9d4" -->
+      <h1 class="font-weight-light">Liberação Miofacial</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    </div>
+  </div>
+</div>
+
+
+            <div class="row">
+              <div class="nav flex-column nav-pills col-sm-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link p-2 active" id="fisio-traumato-tab" data-toggle="pill" href="#fisio-traumato" role="tab" aria-controls="fisio-traumato" aria-selected="true">Fisioterapia Traumato-ortopédica</a>
+                <a class="nav-link p-2" id="fisio-geronto-tab" data-toggle="pill" href="#fisio-geronto" role="tab" aria-controls="fisio-geronto" aria-selected="false">Fisioterapia em Gerontologia</a>
+                <a class="nav-link p-2" id="fisio-neuro-tab" data-toggle="pill" href="#fisio-neuro" role="tab" aria-controls="fisio-neuro" aria-selected="false">Fisioterapia Neurofuncional</a>
+                <a class="nav-link p-2" id="fisio-esporte-tab" data-toggle="pill" href="#fisio-esporte" role="tab" aria-controls="fisio-esporte" aria-selected="false">Fisioterapia Esportiva</a>
+              </div>
+              
+              <div class="tab-content col-sm-9" id="v-pills-tabContent">
+
+                <div class="tab-pane fade show active" id="fisio-traumato" role="tabpanel" aria-labelledby="fisio-traumato-tab">
+                    <ul class="timeline">
+                      <li>
+                        <img src="./img/injury.jpg" alt="Teste" class="rounded img-fluid w-25 float-right ml-2">
+                        <h4 class="text-original-green">Fisioterapia em Traumato-ortopédica</h4>
+                        <!-- <h5>subtítulo</h5> -->
+                        <p>Atua na reabilitação de indivíduos com distúrbios musculoesqueléticos agudos ou crônicos, com tratamento da dor e da função motora, melhorando seu desempenho nas atividades de vida diária. </p>
+                      </li>
+                    </ul>              
+                </div>
+                <div class="tab-pane fade" id="fisio-geronto" role="tabpanel" aria-labelledby="fisio-geronto-tab">
+                    <ul class="timeline">
+                      <li>
+                        <img src="./img/gerontologia.jpg" alt="Teste" class="rounded img-fluid w-25 float-right ml-2">
+                        <h4 class="text-original-green">Fisioterapia em Gerontologia</h4>
+                        <!-- <h5>subtítulo</h5> -->
+                        <p>Atua na conservação/reabilitação da função motora e cognitiva do idoso, retardando/melhorando as incapacidades do processo de envelhecimento. </p>
+                      </li>
+                    </ul>              
+                  
+                </div>
+                <div class="tab-pane fade" id="fisio-neuro" role="tabpanel" aria-labelledby="fisio-neuro-tab">
+                    <ul class="timeline">
+                      <li>
+                        <img src="./img/neuro1.jpg" alt="Teste" class="rounded img-fluid w-25 float-right ml-2">
+                        <h4 class="text-original-green">Fisioterapia Neurofuncional</h4>
+                        <!-- <h5>subtítulo</h5> -->
+                        <p>Atua na reabilitação de movimentos que sofreram lesões no sistema nervoso ou doenças neuromusculares, melhorando a funcionalidade e a independência do indivíduo. </p>
+                      </li>
+                    </ul>              
+                </div>
+                <div class="tab-pane fade" id="fisio-esporte" role="tabpanel" aria-labelledby="fisio-esporte-tab">
+                    <ul class="timeline">
+                      <li>
+                        <img src="./img/esporte.jpg" alt="Teste" class="rounded img-fluid w-25 float-right ml-2">
+                        <h4 class="text-original-green">Fisioterapia Esportiva</h4>
+                        <!-- <h5>subtítulo</h5> -->
+                        <p>Atua na prevenção/reabilitação do atleta amador e profissional, bem como oferece atenção a qualquer pessoa que deseja realizar exercício físico de forma segura e com movimentos de qualidade. </p>
+                      </li>
+                    </ul>              
+                </div>
+
+              </div>
+            </div>
+
+          <hr>
+
+
+
+          <a name="pacotes"></a><h2>Pacotes</h2>
+          <p>Ofereço algumas opções de pacotes além do atendimento avulso para que você possa economizar.</p>
+
+          <div class="card-deck">
+            <div class="card text-center zoom">
+              <div class="card-header"><h5 class="font-weight-bold">Semanal</h5></div>
+              <div class="card-body">
+                <h5 class="card-title">Público-alvo</h5>
+                <p class="card-text">Este plano é ideal para o cliente que está em reabilitação e deseja tratamento frequente, contínuo e que não está preocupado com número de sessões.</p>
+                <h5 class="card-title">Vantagens</h5>
+                <p class="card-text text-left">
+                  - Renovação semanal<br>
+                  - Pagamento semanal<br>
+                  - Desconto progressivo
+                  <dl>
+                    <dd>10% off - 2x por semana</dd>
+                    <dd>20% off - 3x por semana</dd>
+                    <dd>30% off - 4x por semana</dd>
+                  </dl> 
+                </p>
+              </div>
+              <div class="card-footer"><a href="https://api.whatsapp.com/send?phone=5551995605902&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20plano%20*Semanal*" target="_blank" class="btn btn-success">Consulte</a></div>
+            </div>
+
+            <div class="card text-center zoom">
+              <div class="card-header"><h5 class="font-weight-bold">10 Sessões</h5></div>
+              <div class="card-body">
+                <h5 class="card-title">Público-alvo</h5>
+                <p class="card-text">Este plano é ideal para o cliente que procura flexibilidade no agendamento ou atendimentos eventuais.</p>
+                <h5 class="card-title">Vantagens</h5>
+                <p class="card-text text-left">
+                  - 25% off.<br>
+                  - Um ano para utilizar.<br>
+                  - Pagamento <br>
+                  <dl>
+                    <dd>30% de entrada</dd>
+                    <dd>+</dd>
+                    <dd>saldo em 10x sessões</dd>
+                  </dl> 
+                </p>
+              </div>
+              <div class="card-footer"><a href="https://api.whatsapp.com/send?phone=5551995605902&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20plano%20*10%20Sess%C3%B5es*" target="_blank" class="btn btn-success">Saiba Mais</a></div>
+            </div>
+
+            <div class="card text-center zoom">
+              <div class="card-header"><h5 class="font-weight-bold">Família</h5></div>
+              <div class="card-body">
+                <h5 class="card-title">Público-alvo</h5>
+                <p class="card-text">Se há outras pessoas em sua residência precisando de fisioterapia domiciliar, consiga um desconto ADICIONAL na contratação de mais um plano.</p>
+                <h5 class="card-title">Vantagens</h5>
+                <p class="card-text text-left">
+                  - 50% off ADICIONAL em qualquer Plano para outro morador.<br>
+                  - Todos os membros da família atendidos em uma visita.<br>
+                </p>
+              </div>
+              <div class="card-footer"><a href="https://api.whatsapp.com/send?phone=5551995605902&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20plano%20*Familiar*" target="_blank" class="btn btn-success">Quero este!</a></div>
+            </div>
+
+          </div>
+
+
+
+
+          <hr>
+
+          <a name="faq"></a><h2>FAQ</h2>
+          <p>Questões Mais Frequentes</p>
+        <div id="accordion">
+
+          <div class="card">
+            <div class="card-header p-1" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Questão #1
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body p-3">
+                <b>Resposta #1</b> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+              </div>
+            </div>
+          </div>
+
+          <div class="card border">
+            <div class="card-header p-1" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Questão #2
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body p-3">
+                <b>Resposta #2</b> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header p-1" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Questão #3
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body p-3">
+                <b>Resposta #3</b> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      <hr>
+        <div class="footer">
+            <p class="text-center">
+                <a href="https://api.whatsapp.com/send?phone=5551995605902&text=Oi%2C%20peguei%20teu%20contato%20no%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank"><img src="./img/whats.png" width="70" alt="WhatsApp Kellin"></a>
+                <a href="https://www.facebook.com/Fisioterapeuta-Kellin-Gauze-100835728315801" target="_blank"><img src="./img/face.png" width="70" alt="Facebook Kellin"></a>
+                <a href="https://www.instagram.com/kellingauze/" target="_blank"><img src="./img/insta.png" width="70" alt="Instagram Kellin"></a>
+
+            </p>
+            <p class="copyright text-center">
+                Kellin M. S. Gauze © 2020. CREFITO 301902-F
+            </p>
+        </div>
+
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+
+$('.zoom').hover(
+       function(){ $(this).addClass('bg-secondary'); $(this).addClass('text-white'); },
+       function(){ $(this).removeClass('bg-secondary'); $(this).removeClass('text-white'); }
+)
+</script>
+
+
+</body>
+</html>
