@@ -1,6 +1,6 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://tsi.charqueadas.ifsul.edu.br/~delmestre/sitemap.xml
+Sitemap: https://www.andredelmestre.com.br/sitemap.xml
 
 
