@@ -22,14 +22,17 @@ ul.timeline > li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #4ca392;
+    border: 3px solid #921eb5;
     left: 20px;
     width: 20px;
     height: 20px;
     z-index: 400;
 }
-.text-original-green{
-    color: #4ca392
+.text-original-pink{
+    color: #921eb5
+}
+.text-original-blue{
+    color: #6bc0d4
 }
 .text-black{
     color: #000000
@@ -81,6 +84,9 @@ ul.timeline > li:before {
 }
 
 /*
+rosa: #921eb5
+azulzinho: #6bc0d4
+
 29564d - verde escuro
 
 4ca392 - Original
@@ -114,18 +120,18 @@ ul.timeline > li:before {
 /*
 .btn-success {
     color: #fff;
-    background-color: #4ca392;
-    border-color: #4ca392;
+    background-color: #6bc0d4;
+    border-color: #6bc0d4;
 }
 .btn-success:hover {
     color: #fff;
-    background-color: #29564d;
+    background-color: #921eb5;
     border-color: #22443e;
 }
 .btn-success.focus,
 .btn-success:focus {
     color: #fff;
-    background-color: #29564d;
+    background-color: #921eb5;
     border-color: #22443e;
     box-shadow: 0 0 0 0.2rem rgba(77, 153, 139, 0.5);
 }
@@ -155,7 +161,7 @@ ul.timeline > li:before {
     /*height: 3px;*/
     padding-bottom: 10px;
     border: 0;
-    border-bottom: 3px solid #4ca392;
+    border-bottom: 3px solid #6bc0d4;
     left: calc(50% - 25px);
 }
 
@@ -164,7 +170,7 @@ ul.timeline > li:before {
 /* Navar -- Barra de navegacao */
 /*******************************/
 .navbar{
-  background-color:  #29564d;
+  background-color:  #921eb5;
 }
 /*ul.navbar-nav{
   border: 3px solid red;
@@ -187,11 +193,11 @@ ul.navbar-nav {
 
 .navbar-nav>li>a, a.navbar-link {
     text-decoration: none;
-    color: #ddeeeb!important; /*verde claro*/
+    color: #e3b9f0!important; /*rosa claro*/
 }
 .navbar-nav>li>a:hover, a.navbar-link:hover {
     text-decoration: none;
-    color: #4d998b!important; /*verde escuro*/ 
+    color: #f9e6ff!important; /*rosa escuro*/ 
 }
 .navbar-nav>li>a i {
     margin-right: 10px;
@@ -232,8 +238,8 @@ header{
     width: 50%;
     height: auto;
     margin: 50px auto;
-    padding: 40px;
-    background-color: #ddeeebbb;
+    padding: 60px;
+    background-color: #ddddddbb;
     border-radius: 15px;
     position:relative;
 }
@@ -243,7 +249,7 @@ header{
 }
 .active{
     border-width: 5px;
-    border-color: #4ca392;
+    border-color: #921eb5;
 }
 
 
@@ -267,9 +273,10 @@ header{
       font-size: 14px;
       font-weight: normal;
     }
-    p.info{
+/*    p.info{
       margin-top: 200px;
     }
+*/
     .imagem{
       width: 60px;
     }
@@ -292,13 +299,13 @@ header{
       font-size: 14px;
       font-weight: normal;
     }
-    p.info{
+/*    p.info{
       margin-top: 200px;
     }
+*/
     .imagem{
       width: 60px;
     }
-
 }
 
 ul.no-bullet {
@@ -315,10 +322,11 @@ ul.no-bullet {
 
 .zoom:hover {
   transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  border: 3px solid #4ca392;
+  border: 3px solid #921eb5;
 }
+
 .img-fluid{
-display: block
+    display: block
 }
 
 
