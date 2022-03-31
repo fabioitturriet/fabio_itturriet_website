@@ -31,6 +31,7 @@ a {
     transition: all .3s ease-in-out;
 }
   @media (max-width: 768px) {
+    
     .carousel-inner .carousel-item > div {
         display: none;
     }
@@ -48,6 +49,8 @@ a {
 /* display 3 */
 @media (min-width: 768px) {
     
+    .resize{ width: 20%; }
+
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(33.333%);
@@ -79,10 +82,10 @@ a {
   </button>
   <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="navbar-nav">
-      <li>
+<!--       <li>
         <a class="nav-link" href="../index.html"><i aria-hidden="true" class="fa fa-lg fa-home"></i> Home</a>
       </li>
-      <li>
+ -->      <li>
         <a class="nav-link" href="#tec-assistiva"><i aria-hidden="true" class="fa fa-lg fa-wheelchair"></i> Tec. Assistiva</a>
       </li>
       <li>
@@ -322,7 +325,7 @@ a {
           
          
 </div>
-
+<div class="fixed-bottom resize"><img style="width: 75%;" src="../img/live/qrcode.png"></div>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
 

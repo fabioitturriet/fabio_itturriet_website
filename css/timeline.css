@@ -246,6 +246,9 @@ header{
     border-color: #4ca392;
 }
 
+.resize{ 
+    display: block; 
+}
 
 @media screen and (max-width: 768px) {
     .message {
@@ -273,6 +276,7 @@ header{
     .imagem{
       width: 60px;
     }
+    .resize{ display: none; }
 }
 
 @media screen and (max-width: 650px) {
@@ -298,6 +302,7 @@ header{
     .imagem{
       width: 60px;
     }
+    .resize{ display: none; }
 
 }
 
