@@ -227,6 +227,7 @@ header{
 }
 .imagem{
   width: 90px;
+  height: 80%;  
 }
 
 .message {
