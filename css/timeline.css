@@ -230,6 +230,11 @@ header{
    
 }
 
+.imagem2{
+  width: 90px;
+  height: 100px; 
+}
+
 .message {
     width: 50%;
     height: auto;
