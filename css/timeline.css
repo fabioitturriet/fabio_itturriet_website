@@ -216,7 +216,8 @@ header{
 
 .jumbotron{
       height: 100%;
-    background-image: url("../img/fundo_Jumbotron (1).png");
+    /*background-image: url("../img/fundo_Jumbotron (1).png");*/
+    background-image: url("../img/Design sem nome.png");
     background-position: center center;
 
    -webkit-background-size: cover;
