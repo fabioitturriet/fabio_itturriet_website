@@ -351,4 +351,8 @@ ul.no-bullet {
 display: block
 }
 
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
 
