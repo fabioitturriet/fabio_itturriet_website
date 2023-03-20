@@ -187,7 +187,8 @@ ul.navbar-nav {
 
 .navbar-nav>li>a, a.navbar-link {
     text-decoration: none;
-    color: #ddeeeb!important; /*verde claro*/
+    /*color: #ddeeeb!important; /*verde claro*/
+    color: #fffff!important;
 }
 .navbar-nav>li>a:hover, a.navbar-link:hover {
     text-decoration: none;
