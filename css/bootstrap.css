@@ -4758,6 +4758,11 @@ a.badge:hover {
     color: #fff;
     background-color: #55aa9a;
 }
+.badge-plus {
+    color: #fff;
+    background-color: #d61e43;
+}
+
 a.badge-primary:focus,
 a.badge-primary:hover {
     color: #fff;
