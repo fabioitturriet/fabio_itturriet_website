@@ -165,7 +165,7 @@ ul.timeline > li:before {
 /*******************************/
 .navbar{
   /*background-color:  #581D22;*/
-    background-color:  #373435;
+    background-color:  #000000;
 }
 /*ul.navbar-nav{
   border: 3px solid red;
@@ -194,7 +194,7 @@ ul.navbar-nav {
 }
 .navbar-nav>li>a:hover, a.navbar-link:hover {
     text-decoration: none;
-     color: #fecb29!important;
+     color: #ffcc99!important;
     /*color: #4d998b!important;*/ /*verde escuro*/ 
 }
 .navbar-nav>li>a i {
