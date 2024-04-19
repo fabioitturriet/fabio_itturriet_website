@@ -4806,6 +4806,18 @@ a.badge-success:focus {
     color: #fff;
     background-color: #ffcc00;
 }
+
+a.badge-utfpr:focus,
+a.badge-utfpr:hover {
+    color: #fff;
+    background-color: #22443e;
+}
+a.badge-utfpr.focus,
+a.badge-utfpr:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
 .badge-info {
     color: #fff;
     background-color: #17a2b8;
