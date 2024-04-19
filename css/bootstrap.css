@@ -4801,6 +4801,11 @@ a.badge-success:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
+
+.badge-utfpr {
+    color: #fff;
+    background-color: #ffcc00;
+}
 .badge-info {
     color: #fff;
     background-color: #17a2b8;
