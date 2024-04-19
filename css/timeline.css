@@ -21,7 +21,7 @@ ul.timeline > li:before {
     background: white;
     display: inline-block;
     position: absolute;
-    border-radius: 50%;
+    border-radius: 70%;
     border: 3px solid #ffcc00;
     left: 20px;
     width: 20px;
