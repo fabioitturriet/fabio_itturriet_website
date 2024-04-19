@@ -155,7 +155,7 @@ ul.timeline > li:before {
     /*height: 3px;*/
     padding-bottom: 10px;
     border: 0;
-    border-bottom: 3px solid #4ca392;
+    border-bottom: 3px solid ##ffcc00;
     left: calc(50% - 25px);
 }
 
