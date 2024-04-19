@@ -31,6 +31,10 @@ ul.timeline > li:before {
 .text-original-green{
     color: #4ca392
 }
+.text-original-yellow{
+    color: #ffcc00
+}
+
 .text-black{
     color: #000000
 }
