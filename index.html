@@ -147,6 +147,28 @@ a {
   height: 60px;
 }
 
+	.timeline-scroll-container {
+            max-height: 400px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 10px;
+        }
+
+        /* Estilo da barra de rolagem */
+        .timeline-scroll-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .timeline-scroll-container::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        .timeline-scroll-container::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 4px;
+        }
+        .timeline-scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+
 </style>
 
 
