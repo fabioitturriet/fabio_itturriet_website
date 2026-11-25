@@ -192,6 +192,28 @@ a {
     background: #555; 
 }
 
+/* Prêmios: exibir e movimentar um card inteiro */
+#projetosCarousel .carousel-item {
+    display: none;
+    transform: translateX(0);
+}
+
+#projetosCarousel .carousel-item.active,
+#projetosCarousel .carousel-item-next,
+#projetosCarousel .carousel-item-prev {
+    display: block;
+}
+
+#projetosCarousel .carousel-item-next:not(.carousel-item-left),
+#projetosCarousel .active.carousel-item-right {
+    transform: translateX(100%);
+}
+
+#projetosCarousel .carousel-item-prev:not(.carousel-item-right),
+#projetosCarousel .active.carousel-item-left {
+    transform: translateX(-100%);
+}
+	
 </style>
 
 
