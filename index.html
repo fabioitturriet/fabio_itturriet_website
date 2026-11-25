@@ -214,13 +214,32 @@ a {
     transform: translateX(-100%);
 }
 
-/* Enquadramento do chip no cabeçalho */
+/* Fundo do cabeçalho */
 header .jumbotron {
-    background-color: #06121d;
-    background-size: auto 160%;
-    background-position: right center;
-    background-repeat: no-repeat;
-}	
+    position: relative;
+    isolation: isolate;
+    background: #06121d;
+}
+
+/* Chip à direita com transição suave */
+header .jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    aspect-ratio: 2 / 1;
+    z-index: -1;
+    pointer-events: none;
+
+    background: url("./img/fundo_Jumbotron (1).png")
+                right center / auto 140% no-repeat;
+
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 20%);
+    mask-image: linear-gradient(to right, transparent, #000 20%);
+}
 	
 </style>
 
