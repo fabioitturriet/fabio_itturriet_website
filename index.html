@@ -246,6 +246,39 @@ header .jumbotron::before {
 
 
 
+
+<!-- Estilos exclusivos da seção de Extensão: Rastro Cup -->
+<style id="rastro-estilos">
+#rastro-extensao { margin: 0 0 2rem; color: #202020; }
+#rastro-extensao, #rastro-extensao * { box-sizing: border-box; }
+#rastro-extensao .rastro-intro { max-width: 850px; line-height: 1.65; margin: 1rem 0 1.5rem; }
+#rastro-extensao .rastro-subtitulo { margin: 1rem 0 0; font-size: 1.5rem; line-height: 1.3; }
+#rastro-extensao .rastro-carousel { width: 100%; max-width: 660px; margin: 0 auto; }
+#rastro-extensao .rastro-pista { background: #080808; border: 1px solid #ddd; }
+#rastro-extensao .rastro-slide { display: block; margin: 0; padding: 0; }
+#rastro-extensao [hidden] { display: none !important; }
+#rastro-extensao .rastro-slide img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+#rastro-extensao .rastro-controles { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; margin-top: 14px; }
+#rastro-extensao .rastro-botao { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 9px 16px; border: 1px solid #151515; border-radius: 4px; background: #f9bd09; color: #151515; font-family: inherit; font-size: 16px; font-weight: 600; line-height: 1.3; cursor: pointer; }
+#rastro-extensao .rastro-botao:hover { background: #ffd34d; }
+#rastro-extensao .rastro-anterior { justify-self: start; }
+#rastro-extensao .rastro-proximo { justify-self: end; }
+#rastro-extensao .rastro-contador { margin: 0; color: #333; font-size: 15px; font-weight: 600; text-align: center; white-space: nowrap; }
+#rastro-extensao .rastro-indicadores { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px; margin: 8px 0; }
+#rastro-extensao .rastro-ponto { display: inline-flex; justify-content: center; align-items: center; width: 30px; height: 36px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+#rastro-extensao .rastro-ponto::before { content: ''; width: 10px; height: 10px; border: 1px solid #666; border-radius: 50%; background: #fff; }
+#rastro-extensao .rastro-ponto[aria-current="true"]::before { width: 13px; height: 13px; background: #f9bd09; border: 2px solid #151515; }
+#rastro-extensao .rastro-legenda { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.4; text-align: center; }
+#rastro-extensao .rastro-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; margin: 12px 0 0; }
+#rastro-extensao .rastro-links a { display: inline-flex; align-items: center; min-height: 44px; color: #333; text-decoration: underline; text-underline-offset: 3px; font-size: 15px; }
+#rastro-extensao button:focus-visible, #rastro-extensao a:focus-visible, #rastro-extensao .rastro-carousel:focus-visible { outline: 3px solid #145fc4; outline-offset: 3px; }
+@media (max-width: 380px) {
+  #rastro-extensao .rastro-controles { gap: 8px; }
+  #rastro-extensao .rastro-botao { padding: 9px 12px; font-size: 14px; }
+  #rastro-extensao .rastro-ponto { width: 27px; }
+}
+</style>
+
 </head>
 <body>
 
@@ -1771,9 +1804,135 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <hr>
 
-  <a name="extensao"></a><h2>Extensão</h2>
-<br>	   
- <h4>Robocharq</h4>
+  <a name="extensao" id="extensao"></a>
+<section id="rastro-extensao" aria-labelledby="rastro-titulo">
+  <h2 id="rastro-titulo">Extensão</h2>
+  <h3 class="rastro-subtitulo" id="rastro-subtitulo">Rastro Cup: robótica, ensino e comunidade</h3>
+  <p class="rastro-intro">
+    Na UTFPR Curitiba, a Rastro Cup aproxima a universidade da comunidade por meio da robótica.
+    Os estudantes de Oficina de Integração e Extensão 2 (OIE 2) organizam a competição e recebem
+    a comunidade externa. Os estudantes de Sistemas Digitais desenvolvem seus robôs com o apoio
+    de oficinas oferecidas em duas tardes por semana, vinculadas ao projeto de ensino Robótica Digital.
+  </p>
+
+  <!-- Carrossel independente dos carrosséis antigos do Bootstrap; avanço manual. -->
+  <div class="rastro-carousel" id="rastro-carousel" role="region" aria-roledescription="carrossel"
+       aria-labelledby="rastro-subtitulo" tabindex="0">
+    <div class="rastro-pista">
+      <figure class="rastro-slide" id="rastro-card-1" role="group"
+              aria-roledescription="slide" aria-label="1 de 9: O que é extensão?"
+              data-titulo="O que é extensão?">
+        <img src="./img/rastro-01-extensao.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="O que é extensão? A extensão aproxima universidade e sociedade por meio do diálogo e da troca de conhecimentos. Estudantes, professores e comunidade constroem experiências que contribuem para a formação e para a realidade social.">
+      </figure>
+      <figure class="rastro-slide" id="rastro-card-2" role="group"
+              aria-roledescription="slide" aria-label="2 de 9: Ensino, pesquisa e extensão"
+              data-titulo="Ensino, pesquisa e extensão" hidden>
+        <img src="./img/rastro-02-ensino-pesquisa-extensao.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="Ensino, pesquisa e extensão Ensino: aprender e desenvolver competências. Pesquisa: investigar e produzir conhecimento. Extensão: dialogar e construir conhecimentos com a sociedade. Três dimensões que caminham juntas na universidade. Constituição Federal, art. 207.">
+      </figure>
+      <figure class="rastro-slide" id="rastro-card-3" role="group"
+              aria-roledescription="slide" aria-label="3 de 9: Por que extensão no currículo?"
+              data-titulo="Por que extensão no currículo?" hidden>
+        <img src="./img/rastro-03-extensao-curriculo.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="Por que extensão no currículo? Os cursos de graduação devem destinar à extensão, no mínimo, 10% de sua carga horária total. A regra inclui os cursos superiores de tecnologia. Resolução CNE/CES nº 7/2018, art. 4º.">
+      </figure>
+      <figure class="rastro-slide" id="rastro-card-4" role="group"
+              aria-roledescription="slide" aria-label="4 de 9: O que fazemos?"
+              data-titulo="O que fazemos?" hidden>
+        <img src="./img/rastro-04-o-que-fazemos.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="O que fazemos? Organizamos a Rastro Cup, uma competição de robôs autônomos seguidores de linha na UTFPR Curitiba. A atividade reúne desenvolvimento tecnológico, organização estudantil e participação da comunidade. Fotografia de um robô na pista.">
+      </figure>
+      <figure class="rastro-slide" id="rastro-card-5" role="group"
+              aria-roledescription="slide" aria-label="5 de 9: Como funciona?"
+              data-titulo="Como funciona?" hidden>
+        <img src="./img/rastro-05-como-funciona.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="Como funciona? Os estudantes de Oficina de Integração e Extensão 2 (OIE 2) organizam a competição: regulamento, pista, cronometragem, arbitragem, divulgação e logística, além de receber e apresentar a universidade aos visitantes. Os estudantes de Sistemas Digitais são os competidores: montam, programam e testam os robôs.">
+      </figure>
+      <figure class="rastro-slide" id="rastro-card-6" role="group"
+              aria-roledescription="slide" aria-label="6 de 9: Recepção da comunidade externa"
+              data-titulo="Recepção da comunidade externa" hidden>
+        <img src="./img/rastro-06-comunidade-externa.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="Recepção da comunidade externa A turma de OIE 2 recebe a comunidade externa e apresenta a história da UTFPR, o departamento e seus três cursos, as formas de ingresso, o currículo de Tecnologia em Automação Industrial, o mercado de trabalho na área e vídeos dos projetos dos estudantes. Depois, o público é encaminhado ao Aquário para acompanhar a Rastro Cup.">
+      </figure>
+      <figure class="rastro-slide" id="rastro-card-7" role="group"
+              aria-roledescription="slide" aria-label="7 de 9: Das oficinas à pista"
+              data-titulo="Das oficinas à pista" hidden>
+        <img src="./img/rastro-07-oficinas.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="Das oficinas à pista Duas tardes por semana. No projeto de ensino Robótica Digital, estudantes de Sistemas Digitais participam de oficinas de montagem, programação e testes de robôs. Fotografia do professor com a turma no laboratório.">
+      </figure>
+      <figure class="rastro-slide" id="rastro-card-8" role="group"
+              aria-roledescription="slide" aria-label="8 de 9: Premiação"
+              data-titulo="Premiação" hidden>
+        <img src="./img/rastro-08-premiacao.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="Premiação Reconhecimento ao empenho, à criatividade e ao trabalho em equipe. Fotografia do professor Fábio Itturriet com uma equipe de estudantes com medalhas, ao lado da pista.">
+      </figure>
+      <figure class="rastro-slide" id="rastro-card-9" role="group"
+              aria-roledescription="slide" aria-label="9 de 9: Venha conhecer a UTFPR!"
+              data-titulo="Venha conhecer a UTFPR!" hidden>
+        <img src="./img/rastro-09-convite.png" width="1254" height="1254"
+             loading="lazy" decoding="async"
+             alt="Venha conhecer a UTFPR! A comunidade está convidada a conhecer o campus Curitiba, acompanhar a competição e ver os projetos dos estudantes em funcionamento. Acompanhe as novidades em @rastrocup.utfpr.">
+      </figure>
+    </div>
+    <div class="rastro-controles" hidden>
+      <button class="rastro-botao rastro-anterior" type="button" aria-label="Ver card anterior">Anterior</button>
+      <p class="rastro-contador" aria-live="polite" aria-atomic="true"><span data-rastro-contador>1 de 9</span></p>
+      <button class="rastro-botao rastro-proximo" type="button" aria-label="Ver próximo card">Próximo</button>
+    </div>
+    <div class="rastro-indicadores" role="group" aria-label="Escolher card" hidden>
+      <button class="rastro-ponto" type="button" data-rastro-indice="0"
+              aria-label="Ver card 1: O que é extensão?" aria-controls="rastro-card-1" aria-current="true"></button>
+      <button class="rastro-ponto" type="button" data-rastro-indice="1"
+              aria-label="Ver card 2: Ensino, pesquisa e extensão" aria-controls="rastro-card-2"></button>
+      <button class="rastro-ponto" type="button" data-rastro-indice="2"
+              aria-label="Ver card 3: Por que extensão no currículo?" aria-controls="rastro-card-3"></button>
+      <button class="rastro-ponto" type="button" data-rastro-indice="3"
+              aria-label="Ver card 4: O que fazemos?" aria-controls="rastro-card-4"></button>
+      <button class="rastro-ponto" type="button" data-rastro-indice="4"
+              aria-label="Ver card 5: Como funciona?" aria-controls="rastro-card-5"></button>
+      <button class="rastro-ponto" type="button" data-rastro-indice="5"
+              aria-label="Ver card 6: Recepção da comunidade externa" aria-controls="rastro-card-6"></button>
+      <button class="rastro-ponto" type="button" data-rastro-indice="6"
+              aria-label="Ver card 7: Das oficinas à pista" aria-controls="rastro-card-7"></button>
+      <button class="rastro-ponto" type="button" data-rastro-indice="7"
+              aria-label="Ver card 8: Premiação" aria-controls="rastro-card-8"></button>
+      <button class="rastro-ponto" type="button" data-rastro-indice="8"
+              aria-label="Ver card 9: Venha conhecer a UTFPR!" aria-controls="rastro-card-9"></button>
+    </div>
+    <p class="rastro-legenda" data-rastro-legenda>O que é extensão?</p>
+    <p class="rastro-links">
+      <a data-rastro-ampliar href="./img/rastro-01-extensao.png" target="_blank" rel="noopener noreferrer"
+         aria-label="Ampliar imagem: O que é extensão? (abre em nova aba)">Ampliar imagem</a>
+      <a href="https://www.instagram.com/rastrocup.utfpr/" target="_blank" rel="noopener noreferrer">@rastrocup.utfpr</a>
+    </p>
+    <noscript>
+      <p>Ative o JavaScript para navegar pelos cards ou abra as imagens pelos links abaixo:</p>
+      <ol>
+        <li><a href="./img/rastro-01-extensao.png">O que é extensão?</a></li>
+        <li><a href="./img/rastro-02-ensino-pesquisa-extensao.png">Ensino, pesquisa e extensão</a></li>
+        <li><a href="./img/rastro-03-extensao-curriculo.png">Por que extensão no currículo?</a></li>
+        <li><a href="./img/rastro-04-o-que-fazemos.png">O que fazemos?</a></li>
+        <li><a href="./img/rastro-05-como-funciona.png">Como funciona?</a></li>
+        <li><a href="./img/rastro-06-comunidade-externa.png">Recepção da comunidade externa</a></li>
+        <li><a href="./img/rastro-07-oficinas.png">Das oficinas à pista</a></li>
+        <li><a href="./img/rastro-08-premiacao.png">Premiação</a></li>
+        <li><a href="./img/rastro-09-convite.png">Venha conhecer a UTFPR!</a></li>
+      </ol>
+    </noscript>
+  </div>
+</section>
+
+<!-- ROBOCHARQ: conteúdo histórico desativado. Os delimitadores dos comentários internos foram escapados.
+<h4>Robocharq</h4>
 
    <div class="card">
      <img src="./img/Cópia de Tech 4 Health (2).png" loading="lazy" class="card-img-top" alt="Logo" ">
@@ -1794,8 +1953,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a class="btn btn-warning mx-3" href="https://sites.google.com/acad.charqueadas.ifsul.edu.br/robocharq/" target="_blank" role="button">Site da Robocharq &raquo;</a>  
 		<a class="btn btn-warning mx-3" href="https://www.youtube.com/watch?v=Ka4skibz8e0" target="_blank" role="button">Vídeos da Competição &raquo;</a>       
 		    
-		<!-- <a class="btn btn-success" href="http://lattes.cnpq.br/8570090119222585" role="button">Lattes &raquo;</a> &nbsp;-->
-              <!--<a class="btn btn-success" href="https://andredelmestre.com.br/" role="button">Site &raquo;</a>    -->
+		&lt;!-- <a class="btn btn-success" href="http://lattes.cnpq.br/8570090119222585" role="button">Lattes &raquo;</a> &nbsp;--&gt;
+              &lt;!--<a class="btn btn-success" href="https://andredelmestre.com.br/" role="button">Site &raquo;</a>    --&gt;
             </p>
 	   </div>
 
@@ -1876,10 +2035,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  </a>
 		</div>
 
-   </div>   
+   </div>
+FIM DO CONTEÚDO HISTÓRICO ROBOCHARQ -->
 
-            <hr>
- 
+<hr>
+
 <a name="administrativo"></a>
 <h2>Administrativo</h2>
 
@@ -2390,6 +2550,69 @@ $('.carousel:not(#projetosCarousel) .carousel-item').each(function(){
     f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.9697430686315!2d-49.27139972482798!3d-25.43927507755592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce465f9b0c855%3A0xda22d429219f2f12!2sUniversidade%20Tecnol%C3%B3gica%20Federal%20do%20Paran%C3%A1%20%7C%20Campus%20Curitiba%20-%20Sede%20Centro!5e0!3m2!1spt-BR!2sbr!4v1713525845508!5m2!1spt-BR!2sbr';
     console.log('Maps loaded after 1s');
     }, 5000);
+</script>
+
+
+<!-- Navegação do carrossel da Rastro Cup -->
+<script id="rastro-script">
+(function () {
+  'use strict';
+  var carousel = document.getElementById('rastro-carousel');
+  if (!carousel) return;
+  var slides = Array.prototype.slice.call(carousel.querySelectorAll('.rastro-slide'));
+  var dots = Array.prototype.slice.call(carousel.querySelectorAll('[data-rastro-indice]'));
+  var counter = carousel.querySelector('[data-rastro-contador]');
+  var caption = carousel.querySelector('[data-rastro-legenda]');
+  var enlarge = carousel.querySelector('[data-rastro-ampliar]');
+  var index = 0;
+
+  function showSlide(nextIndex) {
+    index = (nextIndex + slides.length) % slides.length;
+    slides.forEach(function (slide, i) { slide.hidden = i !== index; });
+    dots.forEach(function (dot, i) {
+      if (i === index) dot.setAttribute('aria-current', 'true');
+      else dot.removeAttribute('aria-current');
+    });
+    var title = slides[index].getAttribute('data-titulo');
+    counter.textContent = (index + 1) + ' de ' + slides.length;
+    caption.textContent = title;
+    enlarge.href = slides[index].querySelector('img').getAttribute('src');
+    enlarge.setAttribute('aria-label', 'Ampliar imagem: ' + title + ' (abre em nova aba)');
+  }
+
+  carousel.querySelector('.rastro-anterior').addEventListener('click', function () { showSlide(index - 1); });
+  carousel.querySelector('.rastro-proximo').addEventListener('click', function () { showSlide(index + 1); });
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () { showSlide(Number(dot.getAttribute('data-rastro-indice'))); });
+  });
+  carousel.addEventListener('keydown', function (event) {
+    if (event.altKey || event.ctrlKey || event.metaKey) return;
+    if (event.key === 'ArrowLeft') showSlide(index - 1);
+    else if (event.key === 'ArrowRight') showSlide(index + 1);
+    else if (event.key === 'Home') showSlide(0);
+    else if (event.key === 'End') showSlide(slides.length - 1);
+    else return;
+    event.preventDefault();
+  });
+
+  var touchStart = null;
+  var surface = carousel.querySelector('.rastro-pista');
+  surface.addEventListener('touchstart', function (event) {
+    touchStart = event.touches.length === 1 ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+  }, { passive: true });
+  surface.addEventListener('touchend', function (event) {
+    if (!touchStart || !event.changedTouches.length) return;
+    var dx = event.changedTouches[0].clientX - touchStart.x;
+    var dy = event.changedTouches[0].clientY - touchStart.y;
+    touchStart = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) showSlide(index + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+  surface.addEventListener('touchcancel', function () { touchStart = null; }, { passive: true });
+
+  carousel.querySelector('.rastro-controles').hidden = false;
+  carousel.querySelector('.rastro-indicadores').hidden = false;
+  showSlide(0);
+}());
 </script>
 
 </body>
